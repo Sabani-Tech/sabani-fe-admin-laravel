@@ -22,7 +22,7 @@
     <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
 
 </head>
-@if (Route::has('login'))
+@if (Route::has('admin.dashboard'))
     @auth
 
         <body id="body">
