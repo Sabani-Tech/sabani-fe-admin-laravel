@@ -59,8 +59,9 @@
         <div class="topbar-left">
             <a href="index.html" class="logo">
                 <span>
-                    <img src="{{ asset('assets/images/logo-dark.png') }}" alt="logo-large" class="logo-lg logo-dark">
-                    <img src="{{ asset('assets/images/logo.png') }}" alt="logo-large" class="logo-lg logo-light">
+                    <h4 class="logo-lg logo-dark">{{ __('Sabani Tech') }}</h4>
+                    {{-- <img src="{{ asset('assets/images/logo-dark.png') }}" alt="logo-large" class="logo-lg logo-dark"> --}}
+                    {{-- <img src="{{ asset('assets/images/logo.png') }}" alt="logo-large" class="logo-lg logo-light"> --}}
                 </span>
             </a><!--end logo-->
         </div><!--end topbar-left-->
