@@ -22,33 +22,44 @@
     <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
 
 </head>
+@if (Route::has('login'))
+    @auth
 
-<body id="body">
+        <body id="body">
+            <!-- menu -->
+            @include('admin.layouts.menu')
+            <!-- Top Bar Start -->
+            @include('admin.layouts.header')
+            <!-- Top Bar End -->
 
-    <!-- menu -->
-    @include('admin.layouts.menu')
-    <!-- Top Bar Start -->
-    @include('admin.layouts.header')
-    <!-- Top Bar End -->
+            <div class="page-wrapper">
 
-    <div class="page-wrapper">
+                <!-- Page Content-->
+                <div class="page-content-tab">
+                    @yield('content')
 
-        <!-- Page Content-->
-        <div class="page-content-tab">
-            @yield('content')
+                    <!--Start Footer-->
+                    <!-- Footer Start -->
+                    @include('admin.layouts.footer')
+                    <!-- end Footer -->
+                    <!--end footer-->
+                </div>
+                <!-- end page content -->
+            </div>
+            <!-- end page-wrapper -->
+        </body>
+    @else
 
-            <!--Start Footer-->
-            <!-- Footer Start -->
-            @include('admin.layouts.footer')
-            <!-- end Footer -->
-            <!--end footer-->
-        </div>
-        <!-- end page content -->
-    </div>
-    <!-- end page-wrapper -->
+        <body id="body" class="auth-page"
+            style="
+      background-image: url('{{ asset('assets/images/p-1.png') }}');
+      background-size: cover;
+      background-position: center center;
+    ">
+            @yield('content-auth')
+        </body>
+    @endauth
 
-    <!-- Javascript  -->
-    <!-- vendor js -->
 
     <script src="{{ asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/libs/simplebar/simplebar.min.js') }}"></script>
@@ -59,7 +70,7 @@
     <!-- App js -->
     <script src="{{ asset('assets/js/app.js') }}"></script>
 
-</body>
-<!--end body-->
+    <!--end body-->
+@endif
 
 </html>
