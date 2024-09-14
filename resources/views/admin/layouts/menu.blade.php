@@ -3,7 +3,7 @@
     <div class="main-icon-menu">
         <a href="index.html" class="logo logo-metrica d-block text-center">
             <span>
-                <img src="{{ asset('assets/images/logo-sm.png') }}" alt="logo-small" class="logo-sm">
+                <img src="{{ asset('assets/images/Sabani-Tech.jpg') }}" alt="logo-small" class="logo-sm">
             </span>
         </a>
         <div class="main-icon-menu-body">

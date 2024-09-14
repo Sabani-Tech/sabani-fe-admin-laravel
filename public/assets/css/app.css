@@ -261,7 +261,7 @@ File: Leftbar-tab
       -ms-flex-align: center;
           align-items: center;
   padding: 16px 0;
-  background-color: #0b51b7;
+  background-color: #99e196;
   height: 100% !important;
   z-index: 1001;
   position: fixed;
@@ -321,12 +321,12 @@ File: Leftbar-tab
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #1256b9;
+  background-color: #99e196;
   border-radius: 5px;
   font-weight: 500;
 }
 .leftbar-tab-menu .main-icon-menu .main-icon-menu-body .nav.nav-tabs .nav-link:focus, .leftbar-tab-menu .main-icon-menu .main-icon-menu-body .nav.nav-tabs .nav-link.active {
-  background-color: #1256b9;
+  background-color: #99e196;
   border-color: transparent;
   color: white;
 }
@@ -334,7 +334,7 @@ File: Leftbar-tab
   color: white;
 }
 .leftbar-tab-menu .main-icon-menu .main-icon-menu-body .nav.nav-tabs .nav-link:active, .leftbar-tab-menu .main-icon-menu .main-icon-menu-body .nav.nav-tabs .nav-link.active {
-  color: #0b51b7;
+  color: #99e196;
 }
 .leftbar-tab-menu .main-icon-menu .main-icon-menu-body .nav.nav-tabs .nav-link:active .menu-icon, .leftbar-tab-menu .main-icon-menu .main-icon-menu-body .nav.nav-tabs .nav-link.active .menu-icon {
   color: #ffffff;
@@ -361,7 +361,7 @@ File: Leftbar-tab
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0b51b7;
+  background-color: #99e196;
   margin-top: auto;
 }
 @media (min-width: 992px) {

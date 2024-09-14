@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="{{ csrf_token() }}" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/images/Sabani-Tech.jpg') }}">
 
 
 
